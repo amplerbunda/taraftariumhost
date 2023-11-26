@@ -79,8 +79,6 @@
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-
 
 
   <title>Canlı maç izle | Taraftarium24 - Taraftarium - Maç izle</title>
@@ -123,22 +121,6 @@
 		margin-left:auto;
 		margin-right:auto
 	}
-	    .splashAd {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-        background-color: white;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        display: block; /* Başlangıçta görünür olacak */
-    }
-
-    .splashAdHidden {
-        display: none; /* Gizli durum */
-    }
 	.logo-container {
 		text-align:center;
 		padding:1px;
@@ -621,11 +603,6 @@ padding-right: 10px;
 </head>
 <body>
     <amp-sidebar class="site-menu" id="site-menu" layout="nodisplay" side="right">
-<amp-state id="adVisible">
-    <script type="application/json">
-        true
-    </script>
-</amp-state>
 
 <ul>
     <li>
@@ -671,18 +648,7 @@ padding-right: 10px;
 
  <amp-iframe allowfullscreen="" allowtransparency="" frameborder="0" height="300" scrolling="no" src="https://fram8.pages.dev/channel?id=yayinstar" width="auto" layout="fixed-height" sandbox="allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="height:300px"><span placeholder="" class="amp-wp-iframe-placeholder"></span><noscript><iframe name="ekrani" frameborder="0" height="300" scrolling="no" src="https://fram8.pages.dev/channel?id=yayinstar" width="100%"></iframe></noscript></amp-iframe>
     <span><strong>⚽️ Günün Canlı Maçları ↓</strong></span>
-
-<!-- Splash Reklam Başlangıcı -->
-<div id="splashAd" class="splashAd" [class]="adVisible ? 'splashAd' : 'splashAdHidden'">
-    <a href="https://bit.ly/TIKLAGIR" target="_blank">
-        <img src="/xxsss.jpg" alt="Reklam">
-    </a>
-    <button on="tap:AMP.setState({ adVisible: false })">Kapat</button>
-</div>
-<!-- Splash Reklam Bitişi -->
-
 	    
-	
 #akisbaslangic
 <a href="/yayinstar.html">
             <div class="sportrgool">
