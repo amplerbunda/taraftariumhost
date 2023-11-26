@@ -650,11 +650,11 @@ padding-right: 10px;
     <span><strong>⚽️ Günün Canlı Maçları ↓</strong></span>
 
 <!-- Splash Reklam Başlangıcı -->
-<div id="splashAd" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background-color: white; border: 1px solid #ccc; padding: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+<div id="splashAd" style="..." [class]="adVisible ? 'visible' : 'hidden'" class="visible">
     <a href="https://bit.ly/TIKLAGIR" target="_blank">
-        <img src="/xxsss.jpg" alt="Reklam" style="max-width: 250px; height: auto;">
+        <img src="/xxsss.jpg" alt="Reklam" style="...">
     </a>
-    <button onclick="document.getElementById('splashAd').style.display='none'" style="display: block; margin-top: 10px; text-align: center; background-color: #f44336; color: white; padding: 5px 10px; border: none; cursor: pointer;">Kapat</button>
+    <button on="tap:AMP.setState({ adVisible: false })" style="...">Kapat</button>
 </div>
 <!-- Splash Reklam Bitişi -->
 	    
