@@ -668,13 +668,14 @@ padding-right: 10px;
     <span><strong>⚽️ Günün Canlı Maçları ↓</strong></span>
 
 <!-- Splash Reklam Başlangıcı -->
-<div id="splashAd" style="..." [class]="adVisible ? 'visible' : 'hidden'" class="visible">
+<div id="splashAd" class="splashAd" [class]="adVisible ? 'splashAd' : 'splashAdHidden'">
     <a href="https://bit.ly/TIKLAGIR" target="_blank">
-        <img src="/xxsss.jpg" alt="Reklam" style="...">
+        <img src="/xxsss.jpg" alt="Reklam">
     </a>
-    <button on="tap:AMP.setState({ adVisible: false })" style="...">Kapat</button>
+    <button on="tap:AMP.setState({ adVisible: false })">Kapat</button>
 </div>
 <!-- Splash Reklam Bitişi -->
+
 	    
 #akisbaslangic
 <a href="/yayinstar.html">
